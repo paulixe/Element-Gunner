@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 146a3efdc110c9e40be62474daa40b8d, type: 3}
+  m_Name: AmmoDetailsSo_
+  m_EditorClassIdentifier: 
+  AmmoName: Bullet
+  Sprite: {fileID: 21300000, guid: 4df9cc7131cd27f4288bca5e76c82034, type: 3}
+  Speed: 10
+  Prefab: {fileID: 6718717673452628072, guid: a905c4dd12d855b4699d892802e78520, type: 3}
+  ElementDamages:
+    values:
+    - Key: 0
+      Value: 1
+    - Key: 1
+      Value: 1
+    - Key: 2
+      Value: 1
+    - Key: 3
+      Value: 1
+    - Key: 4
+      Value: 10

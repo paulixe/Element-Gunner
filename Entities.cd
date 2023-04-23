@@ -1,0 +1,314 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="PII.Entities.AnimateEnemy" Collapsed="true">
+    <Position X="16.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAAAAAAAAAgAAAACAAAAAAAACIAAAAAAAACEI=</HashCode>
+      <FileName>Assets\Scripts\Entities\Ennemy\AnimateEnemy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="enemy" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PII.Entities.Enemy" Collapsed="true">
+    <Position X="16.5" Y="4.5" Width="1.5" />
+    <AssociationLine Name="IdleEvent" Type="PII.Entities.IdleEvent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.062" Y="5.191" />
+        <Point X="17.062" Y="7.846" />
+        <Point X="16.5" Y="7.846" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="AimEvent" Type="PII.Entities.AimEvent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="17.438" Y="5.191" />
+        <Point X="17.438" Y="9.096" />
+        <Point X="16.5" Y="9.096" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="EnemyDetails" Type="PII.Entities.EntityDetailsSO" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="16.812" Y="5.191" />
+        <Point X="16.812" Y="6.875" />
+        <Point X="16.5" Y="6.875" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAQAACQAAAAAEAAQAAAAAAAAAAAAIAAQAAEA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Ennemy\Enemy.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="IdleEvent" />
+      <Field Name="AimEvent" />
+      <Field Name="MovementByPositionEvent" />
+      <Field Name="DestroyedEvent" />
+      <Property Name="EnemyDetails" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PII.Entities.EnemyMovement" Collapsed="true">
+    <Position X="18" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAIAAAAAAAKAAAAAAAAAAAAACwAACAAAAAAAAAEI=</HashCode>
+      <FileName>Assets\Scripts\Entities\Ennemy\EnemyMovement.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="enemy" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PII.Entities.EnemySpawner" Collapsed="true">
+    <Position X="15" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAgAAAAAAAAAAAAAAAAAQAIAAAAAIACACAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Ennemy\EnemySpawner.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="enemyDetails" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PII.Entities.EntityDetailsSO" Collapsed="true">
+    <Position X="15" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAABAAAgEAAAAAAAAAAAABAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Entities\EntityDetailsSO.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PII.Entities.DestroyedEvent" Collapsed="true">
+    <Position X="18.75" Y="7" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Health\DestroyedEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PII.Entities.Health" Collapsed="true">
+    <Position X="15" Y="11.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAACAEABAAAAAQAABAAAAAIAAAAgAAACEA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Health\Health.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PII.Entities.Idle" Collapsed="true">
+    <Position X="15" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAAAAAAAAEAAAAAAAAAAAEAAAIAAAAAAAACEA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Movement\Idle.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="idleEvent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PII.Entities.IdleEvent" Collapsed="true">
+    <Position X="15" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Movement\IdleEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PII.Entities.MovementByPosition" Collapsed="true">
+    <Position X="18.75" Y="6" Width="1.75" />
+    <Compartments>
+      <Compartment Name="Fields" Collapsed="true" />
+    </Compartments>
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAAAAAAAAEAAAAACAAAAAAAAAIAEAAAAAACEA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Movement\MovementByPosition.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="movementByPositionEvent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PII.Entities.MovementByPositionEvent" Collapsed="true">
+    <Position X="18.75" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Movement\MovementByPositionEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PII.Entities.MovementByVelocity" Collapsed="true">
+    <Position X="8.25" Y="4.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAAAAAAEAAAAAAAAAAABEAAIAAAAAAAACEA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Movement\MovementByVelocity.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="movementByVelocityEvent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PII.Entities.MovementByVelocityEvent" Collapsed="true">
+    <Position X="10.75" Y="4.75" Width="2.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Movement\MovementByVelocityEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PII.Entities.AnimatePlayer" Collapsed="true">
+    <Position X="12" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAAAAAAAAAgAAAAAAAAAAAEACJAAAAAAAACEA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Player\AnimatePlayer.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="player" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PII.Entities.Player" Collapsed="true">
+    <Position X="13.5" Y="4.5" Width="1.5" />
+    <AssociationLine Name="PlayerDetails" Type="PII.Entities.EntityDetailsSO" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.812" Y="5.191" />
+        <Point X="14.812" Y="6.798" />
+        <Point X="15" Y="6.798" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="IdleEvent" Type="PII.Entities.IdleEvent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.5" Y="5.191" />
+        <Point X="14.5" Y="7.744" />
+        <Point X="15" Y="7.744" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="AimEvent" Type="PII.Entities.AimEvent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="14.25" Y="5.191" />
+        <Point X="14.25" Y="9.096" />
+        <Point X="14.542" Y="9.096" Type="JumpStart" />
+        <Point X="14.708" Y="9.096" Type="JumpEnd" />
+        <Point X="15" Y="9.096" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="Animator" Type="UnityEngine.Animator" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.625" Y="5.191" />
+        <Point X="13.625" Y="6.096" />
+        <Point X="13" Y="6.096" />
+      </Path>
+    </AssociationLine>
+    <AssociationLine Name="FireEvent" Type="PII.Entities.FireEvent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="13.875" Y="5.191" />
+        <Point X="13.875" Y="7.096" />
+        <Point X="13" Y="7.096" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABCAAAAAEAAEQAAAAAAAAAAAAAAAQAAEA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Player\Player.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="PlayerDetails" />
+      <Field Name="IdleEvent" />
+      <Field Name="AimEvent" />
+      <Field Name="MovementByVelocityEvent" />
+      <Field Name="Animator" />
+      <Field Name="FireEvent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PII.Entities.PlayerControl" Collapsed="true">
+    <Position X="14" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAABAAAAAAAAAARAAAABAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Player\PlayerControl.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="player" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PII.Entities.Aim" Collapsed="true">
+    <Position X="15" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAIAAAAAAAAAAEAAAAAAAARAAAIAAAAAAAACEA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Weapons\Aim.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="aimEvent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PII.Entities.AimEvent" Collapsed="true">
+    <Position X="15" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Weapons\AimEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PII.Entities.Ammo" Collapsed="true">
+    <Position X="11.75" Y="12" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAAAQAAAAAAQAAAAAAAAAAAEAAAQAAAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Entities\Weapons\Ammo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PII.Entities.AmmoDetailsSo" Collapsed="true">
+    <Position X="9" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAgAAAAABAAAAAAAAAAAIAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Weapons\AmmoDetailsSo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PII.Entities.Fire" Collapsed="true">
+    <Position X="11.75" Y="8.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQCAAAAAAAQAAAAQAFAAAAAAAAAAAAIABAAAAAACEA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Weapons\Fire.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="fireEvent" />
+      <Field Name="fireAmmoEvent" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="FireModules" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PII.Entities.FireAmmo" Collapsed="true">
+    <Position X="11.75" Y="11" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAEAACAAgAAEAAAIABAAABAACEA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Weapons\FireAmmo.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="fireAmmoEvent" />
+      <Field Name="ammoDetails" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="PII.Entities.FireAmmoEvent" Collapsed="true">
+    <Position X="11.75" Y="9.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Weapons\FireAmmoEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PII.Entities.FireEvent" Collapsed="true">
+    <Position X="11.5" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Weapons\FireEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PII.Entities.FireModule" Collapsed="true">
+    <Position X="9" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAEIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAAAA=</HashCode>
+      <FileName>Assets\Scripts\Entities\Weapons\FireModule.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.Animator" Collapsed="true">
+    <Position X="11.5" Y="5.75" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Class Name="PII.GameManager" Collapsed="true">
+    <Position X="13" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAICBAAAAAAAQAAAAAAEBEAAAIAgAAAQAACAA=</HashCode>
+      <FileName>Assets\Scripts\Core\GameManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Player" />
+    </ShowAsAssociation>
+  </Class>
+  <Enum Name="PII.Entities.AimDirection" Collapsed="true">
+    <Position X="9" Y="10" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAQAgIAAAAAAAAAAAAAAAAAAAAAAAAACACAAAAAAAI=</HashCode>
+      <FileName>Assets\Scripts\Entities\Weapons\AimDirection.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

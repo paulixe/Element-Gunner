@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Comment CommentText="DungeonBuilder uses the graphs and roomtemplates in GameResources">
+    <Position X="4.333" Y="3.141" Height="0.75" Width="1.7" />
+  </Comment>
+  <Comment CommentText="The doorways in RoomTemplateSO are possible doorways. Wheras doorways in room are real doorways that will be used for creating a door">
+    <Position X="9.269" Y="4.3" Height="1.322" Width="1.673" />
+  </Comment>
+  <Class Name="PII.Dungeon.Door" Collapsed="true">
+    <Position X="10.25" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAECCAAAAAAAAABAAAAEAAABAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon\Core\Door.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PII.Dungeon.Doorway" Collapsed="true">
+    <Position X="5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAABAAAAABAAAAAAQAAAYAQAAAABAAAAACAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon\Core\Doorway.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PII.Dungeon.DungeonBuilder" Collapsed="true">
+    <Position X="4.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAAAACAAAAAIAACAAAAAAABAAAAAAoAAABEMBAAwBA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon\Core\DungeonBuilder.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PII.Dungeon.DungeonManager" Collapsed="true">
+    <Position X="6.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAAAAAAAAAAAAAIACCAAAIAAAAAIgAAAAAKACEA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon\Core\DungeonManager.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="dungeonBuilder" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="rooms" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PII.Dungeon.InstantiatedRoom" Collapsed="true">
+    <Position X="7" Y="1.75" Width="1.5" />
+    <AssociationLine Name="doors" Type="PII.Dungeon.Door" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="8.5" Y="2.441" />
+        <Point X="10.25" Y="2.438" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AIgAAgIAAACAAQAQIBACBIAAAEIAAAEAEQQAAECQCEA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon\Core\InstantiatedRoom.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="Room" />
+      <Field Name="RoomAStar" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="doors" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PII.Dungeon.Room" Collapsed="true">
+    <Position X="7.25" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAEAAAAwAAEAAAAAAAAAAAAACAAAAAAAAQA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon\Core\Room.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="RoomTemplate" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="Doorways" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PII.Dungeon.RoomAStar" Collapsed="true">
+    <Position X="10" Y="1" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAACAACAAAAAAAAAAACAQAAACAAAAAAAEAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon\Core\RoomAStar.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PII.Dungeon.RoomTemplateSO" Collapsed="true">
+    <Position X="4.75" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAAAAAAAAAAgAAggQAIAAAAAAAQACAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon\Core\RoomTemplateSO.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="doorwayList" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="PII.Dungeon.DungeonGraph.RoomNode" Collapsed="true">
+    <Position X="1.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAhAIAAAAAEQEwwAhAQBAAAADCJAAgAhJAUIABAQCkA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon\DungeonGraph\RoomNode.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="graph" />
+    </ShowAsAssociation>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PII.Dungeon.DungeonGraph.DungeonGraphSO" Collapsed="true">
+    <Position X="1.5" Y="3.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAgAAgAAACAQCgAAgAEAAAAEAAgAQAAABAAAARAQAAA=</HashCode>
+      <FileName>Assets\Scripts\Dungeon\DungeonGraph\DungeonGraphSO.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="PII.GameResources" Collapsed="true">
+    <Position X="2.25" Y="2.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAACAAAAAEAAEAAAEBAAQAAQAAIAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Core\GameResources.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="GraphTemplates" />
+      <Field Name="RoomTemplates" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

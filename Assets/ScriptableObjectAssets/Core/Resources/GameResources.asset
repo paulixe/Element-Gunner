@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c25f8e10f53f71439161096e00d7208, type: 3}
+  m_Name: GameResources
+  m_EditorClassIdentifier: 
+  RoomTemplates:
+  - {fileID: 11400000, guid: b497cf51860cc124088acdf3dfcc4bdc, type: 2}
+  - {fileID: 11400000, guid: 17aab39e60e31b44cbb99c260366f725, type: 2}
+  - {fileID: 11400000, guid: 75e9ed4d33bf76c439c799075b936c76, type: 2}
+  - {fileID: 11400000, guid: 58168ebb0df392f41b061a0c6b25da05, type: 2}
+  - {fileID: 11400000, guid: 230557191ef7e66449fde6cecaf858cb, type: 2}
+  - {fileID: 11400000, guid: a9de631861c958a4b8b6f5da0f8d45a6, type: 2}
+  - {fileID: 11400000, guid: 74c9dcaed5ec2f949878a19a2067a840, type: 2}
+  - {fileID: 11400000, guid: 8560fcec9e5cd454aae62d7775c44da1, type: 2}
+  - {fileID: 11400000, guid: 1d5c4c4b7468b7749bced9ffcf6799be, type: 2}
+  - {fileID: 11400000, guid: 0570548b50ed26c469aa21fbd2cce109, type: 2}
+  - {fileID: 11400000, guid: f2a366d151026cc4ab8d50cdfd60529e, type: 2}
+  - {fileID: 11400000, guid: 3cdc996eae718644dad8dad24ae2c39f, type: 2}
+  - {fileID: 11400000, guid: ca3ebf2399132f74589db4539c90168f, type: 2}
+  GraphTemplates:
+  - {fileID: 11400000, guid: 7525360d3f520284a9794fa880a930e6, type: 2}
+  - {fileID: 11400000, guid: c9c250f57e2435641b0e9454838cace9, type: 2}
+  - {fileID: 11400000, guid: 39cad83a998c1ff4c91421ab2b7b3424, type: 2}
+  CollisionTile: {fileID: 11400000, guid: 37e2c9e0227bfbc409cd632b9bd0c81f, type: 2}
+  PreferredPathTile: {fileID: 11400000, guid: 3ce5fb260af53d24887b55c3d50041e2, type: 2}
+  PlayerDetails: {fileID: 11400000, guid: 1f0b4ba8aa67c224690bf144eee229d5, type: 2}
+  elementmap:
+    values:
+    - Key: 0
+      Value: 0
+    - Key: 1
+      Value: 0
+    - Key: 2
+      Value: 0
+    - Key: 3
+      Value: 0
+  EnemyDetails:
+  - {fileID: 11400000, guid: 2e3ff815c0e9cf449a717eda0823050a, type: 2}
+  - {fileID: 11400000, guid: 7e6ce9d7797f117479edd66d90eaa3cd, type: 2}
+  - {fileID: 11400000, guid: b5e4e0acfbc83d44b88ae6f7a511a0ef, type: 2}
+  - {fileID: 11400000, guid: c07af5b27373fd941bb3d9ce191e51f5, type: 2}
+  - {fileID: 11400000, guid: 4938135b19d4acd4eab1167436b898a9, type: 2}
+  - {fileID: 11400000, guid: 2a4d44e6da9403649b76d9ecd360ae86, type: 2}
